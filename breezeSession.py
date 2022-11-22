@@ -1,11 +1,11 @@
 #!/usr/bin/env python
+import pathlib
 import sys
-sys.path.append('../../O+00+00+03+ICICIBREEZE/')
-import breezeValues
+sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent.parent)+'\\O+00+00+03+ICICIBREEZE\\')
 import breeze_connect
 import mysql.connector
 import mysql.connector.errorcode
-
+import breezeValues
 
 # Retrieve Session Token from mySQL Database
 def getToken():

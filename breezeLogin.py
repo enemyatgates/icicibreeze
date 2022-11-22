@@ -1,9 +1,10 @@
 #!/usr/bin/env python
+import pathlib
 import sys
-sys.path.append('../../O+00+00+03+ICICIBREEZE/')
-import breezeValues
+sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent.parent)+'\\O+00+00+03+ICICIBREEZE\\')
 import urllib.parse
 import webbrowser
+import breezeValues
 
 # Generate Login Session
 def getLogin():
